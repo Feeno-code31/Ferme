@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="livraison-bar">
+            <p class="livraison-entete">Livraison partout dans le département du Sud</p>
+            <p>+509 11111111</p>
+        </div>
+        
+        <div class="header-main">
+            <a href="index.html">
+                <img class="logo" src="Images/logo.png" alt="Logo de l'entreprise">
+            </a>
+            
+            <div class="hamburger" id="hamburger">&#9776;</div>
+
+            <nav aria-label="Menu principal">
+                <ul id="navLinks">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="nosproduits.html">NOS PRODUITS</a></li>
+                    <li><a href="poulets.html">POULETS</a></li>
+                    <li><a href="canards.html">CANARD</a></li>
+                    <li><a href="lapins.html">LAPIN</a></li>
+                    <li><a href="dindons.html">DINDON</a></li>
+                    <li><a href="contact.html">NOUS CONTACTER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <section class="descriptionPage">
+        <div class="descriptionFerme">
+            <h1>Le paradis ferme et poulailler</h1>
+            <div class="separator"></div>
+            <p>
+                Le paradis ferme et poulailler vous propose la vente de viande et d'œufs.<br>
+                Nous sommes spécialisés dans l'élevage et la production de viande.<br>
+                Nous garantissons la qualité de nos produits.
+            </p>
+        </div>
+    </section>
+
+
+    <div class="info">
+        <div class="courInfo">
+            <img src="Images/cour.jpg" alt="">
+        </div>
+
+        <div class="DescriptionFerme">
+            <h1>Nous sommes des éleveurs et producteurs de viande dans la commune de Torbeck</h1>
+            <div class="DescFerme">
+                <p>Venez à la ferme !</p>
+                <p>Nous sommes un groupe d'amis qui ont décidé de mettre sur pied une ferme
+                    dans la commune de Torbeck. 
+                </p>
+
+                <div>
+                    <p>A Le paradis ferme et poulailler, nous produisons :</p>
+                    <ul class="ListeDesProduits">
+                        <li>Du poulet de chair</li>
+                        <li>Du canard</li>
+                        <li>Du cochon</li>
+                        <li>Du lapin</li>
+                        <li>Du dindon</li>
+                    </ul>
+
+                    <p>Si vous aimez la viande de qualité et un service à point,
+                        N'hésitez pas à nous visiter et à passer vos commandes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="NosProduitsGlobal">
+        <div class="ProdDesc">
+            <h2 class="DecProd">Découvez nos produits</h2>
+            <p class="texteProd">Nous avons sélectionné ce qui est bon</p>
+        </div>
+        
+        <div class="NosProduits">
+            <div>
+                <img class="Prod" src="Images/poulet-cuire.jpg" alt="">
+            </div>
+            <div>
+                <img class="Prod" src="Images/lapincuire.jpg" alt="">
+            </div>
+            <div>
+                <img class="Prod" src="Images/dindoncuire.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="ConsultezProduits">
+            <p class="texteProd">Pour voir toute la catalogue, consultez <a class="lienNosProduits" href="nosproduits.html">NOS PRODUITS</a>.</p>
+        </div>
+        
+    </div>
+
+    <div class="adresse">
+        <img src="Images/maps.png" alt="">
+        <div class="adresseInfo">
+            <p>LE PARADIS FERME ET POULAILLER</p>
+            <p>ADRESSE</p>
+            <p>Formond, Torbeck, Sud-Haiti</p>
+            <p class="itineraire"><a href="">Itinéraire</a></p>
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="footerDescription">
+            <h2>Le paradis ferme et poulailler</h2>
+            <img src="Images/logo.png" alt="">
+            <p>Qu'est-ce que vous attendez, <a href="contact.html">Contactez-nous !</a></p>
+        </div>
+
+        <div class="footer-list-top">
+            <ul class="footer-list">
+                <li>ACCUEIL</li>
+                <li>NOS PRODUITS</li>
+                <li>NOUS CONTACTER</li>
+                <li>NOTRE ENTREPRISE</li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html

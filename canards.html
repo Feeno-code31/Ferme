@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="livraison-bar">
+            <p class="livraison-entete">Livraison partout dans le département du Sud</p>
+            <p>+509 11111111</p>
+        </div>
+        
+        <div class="header-main">
+            <a href="index.html">
+                <img class="logo" src="Images/logo.png" alt="Logo de l'entreprise">
+            </a>
+            
+            <div class="hamburger" id="hamburger">&#9776;</div>
+
+            <nav aria-label="Menu principal">
+                <ul id="navLinks">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="nosproduits.html">NOS PRODUITS</a></li>
+                    <li><a href="poulets.html">POULETS</a></li>
+                    <li><a href="canards.html">CANARD</a></li>
+                    <li><a href="lapins.html">LAPIN</a></li>
+                    <li><a href="dindons.html">DINDON</a></li>
+                    <li><a href="contact.html">NOUS CONTACTER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="presentation-produit">
+        <div class="presentation-produit1">
+            <p class="titreProduit">CANARD</p>
+            <div class="separator1"></div>
+            <p class="DescPouleCanard">
+                Nos canards sont élevés pendant 45 jours dans un espace aéré et bien entretenu, garantissant des conditions d’élevage saines et respectueuses. Nourris avec une alimentation à base de céréales, ils offrent une viande tendre, savoureuse et idéale pour tous types de préparations.
+            </p>
+        </div>
+    </div>
+
+    <div class="catalogue-produit">
+        <div class="produit1">
+            <div class="imageProduit">
+                <img src="Images/canard.jpg" alt="">
+            </div>
+            <div class="descPrix">
+                <p><a href="#">Canard vivant</a></p>
+                <p class="prixProduit">1000 HTG</p>
+                <p class="acheter"><a href="#">Acheter</a></p>
+            </div>
+        </div>
+
+        <div class="produit2">
+            <div class="imageProduit">
+                <img src="Images/canardcuire.jpg" alt="">
+            </div>
+            <div class="descPrix">
+                <p><a href="#">Canard pret à cuire</a></p>
+                <p class="prixProduit">1500 HTG</p>
+                <p class="acheter"><a href="#">Acheter</a></p>
+            </div>
+        </div>
+    </div> 
+
+    <footer>
+        <div class="footerDescription">
+            <h2>Le paradis ferme et poulailler</h2>
+            <img src="Images/logo.png" alt="">
+            <p>Qu'est-ce que vous attendez, <a href="contact.html">Contactez-nous !</a></p>
+        </div>
+
+        <div class="footer-list-top">
+            <ul class="footer-list">
+                <li>ACCUEIL</li>
+                <li>NOS PRODUITS</li>
+                <li>NOUS CONTACTER</li>
+                <li>NOTRE ENTREPRISE</li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
