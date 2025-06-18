@@ -155,7 +155,7 @@ nav {
 
 /* Section avec image de fond dans la page d'accueil */
 .descriptionPage {
-    background-image: url(Images/poule-Acuueil.jpg);
+    background-image: url(Images/fontLeparadis.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh; /* pleine hauteur */
