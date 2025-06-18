@@ -256,9 +256,15 @@ nav {
 
 .adresse img {
     display: block;
-    width: 50%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .adresse img {
+        width: 100%;
+    }
 }
 
 .itineraire a {
@@ -331,7 +337,9 @@ nav {
     }
 
     .lienNosProduits:hover {
-        display: none;
+        background-color: #3d0606;
+        padding: 20px;
+        color: white;
     }
 }
 
@@ -655,7 +663,7 @@ footer {
     }
     
     .footerDescription p a:hover {
-        display: none;
+        background-color: #443434;
     }
 
     .footerDescription p a {
@@ -684,6 +692,7 @@ footer {
     .footer-list li {
         display: block;
         background-color: white;
+        border-radius: 15px;
         color: black;
         margin: 10px;
         padding: 15px;
