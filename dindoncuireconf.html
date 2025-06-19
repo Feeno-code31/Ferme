@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="livraison-bar">
+            <p class="livraison-entete">Livraison partout dans le département du Sud</p>
+            <p>+509 11111111</p>
+        </div>
+        
+        <div class="header-main">
+            <a href="index.html">
+                <img class="logo" src="Images/logo.png" alt="Logo de l'entreprise">
+            </a>
+            
+            <div class="hamburger" id="hamburger">&#9776;</div>
+
+            <nav aria-label="Menu principal">
+                <ul id="navLinks">
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="nosproduits.html">NOS PRODUITS</a></li>
+                    <li><a href="poulets.html">POULETS</a></li>
+                    <li><a href="canards.html">CANARD</a></li>
+                    <li><a href="lapins.html">LAPIN</a></li>
+                    <li><a href="dindons.html">DINDON</a></li>
+                    <li><a href="contact.html">NOUS CONTACTER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="produitconf">
+        <div class="produitconf-in">
+            <div class="descConf">
+                <img class="imgconf" src="Images/dindoncuire.jpg" alt="">
+                <h1>DINDON PRET A CUIRE DE 2 KG</h1>
+                <p class="prixConf">1000 HTG</p>
+                <hr>
+                <div class="commande-zone">
+                    <div class="quantite">
+                        <button class="btn-moins">-</button>
+                        <span class="nombre" id="quantite">1</span>
+                        <button class="btn-plus">+</button>
+                    </div>
+                    <button class="btn-commander">COMMANDER</button>
+                </div>
+
+                <p>Nous livrons partout dans le département du Sud.<br>Le prix indiqué est de 500 HTG/kg. Le poids varie entre 1 et 2.5 kg. Merci de votre compréhension.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footerDescription">
+            <h2>Le paradis ferme et poulailler</h2>
+            <img src="Images/logo.png" alt="">
+            <p>Qu'est-ce que vous attendez, <a href="contact.html">Contactez-nous !</a></p>
+        </div>
+
+        <div class="footer-list-top">
+            <ul class="footer-list">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="nosproduits.html">NOS PRODUITS</a></li>
+                <li><a href="#">NOTRE ENTREPRISE</a></li>
+            </ul>
+        </div>
+
+        <p class="copyright">© 2025 Le Paradis Ferme &amp; Poulailler. Tous droits réservés.</p>
+
+    </footer>
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+    <script>
+        const btnPlus = document.querySelector('.btn-plus');
+        const btnMoins = document.querySelector('.btn-moins');
+        const quantiteAffichee = document.getElementById('quantite');
+
+        let quantite = 1;
+
+        btnPlus.addEventListener('click', () => {
+            quantite++;
+            quantiteAffichee.textContent = quantite;
+        });
+
+        btnMoins.addEventListener('click', () => {
+            if (quantite > 1) {
+                quantite--;
+                quantiteAffichee.textContent = quantite;
+            }
+        });
+    </script>
+
+
+</body>
+</html>
