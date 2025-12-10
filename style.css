@@ -692,7 +692,7 @@ footer {
         width: 100%;
     }
 
-    .footer-list li {
+    .footer-list a {
         display: block;
         background-color: white;
         color: black;
@@ -817,6 +817,7 @@ footer {
         border-radius: 5px;
     }
 }
+
 
 
 
